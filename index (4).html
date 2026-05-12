@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Perrone y Asociados – Soluciones Legales. Estudio jurídico integral especializado en accidentes laborales, derecho de familia, divorcios, sucesiones y derecho penal. Litigamos en Pcia. de Buenos Aires y CABA.">
+<meta name="keywords" content="abogados Buenos Aires, abogados CABA, accidentes laborales, derecho de familia, divorcios, sucesiones, derecho penal, Perrone Abogados, GBA">
+<meta property="og:title" content="Perrone y Asociados – Soluciones Legales">
+<meta property="og:description" content="Estudio jurídico integral con más de 15 años de experiencia. Consultá gratis.">
+<meta property="og:type" content="website">
+<title>Perrone y Asociados – Soluciones Legales</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --gold: #B8963E;
+    --gold-light: #D4AF6A;
+    --gold-pale: #F5EDD8;
+    --dark: #2A2A2A;
+    --text: #3A3A3A;
+    --text-muted: #6B6B6B;
+    --bg: #FFFFFF;
+    --bg-soft: #FAFAF8;
+    --bg-section: #F7F4EE;
+    --border: #E8E0D0;
+    --nav-h: 72px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    height: var(--nav-h);
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    gap: 2rem;
+    transition: box-shadow .3s;
+  }
+  nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.07); }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .nav-logo-img {
+    height: 44px;
+    width: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin-left: auto;
+  }
+  .nav-links li { position: relative; }
+  .nav-links a {
+    display: block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: .01em;
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.1);
+    min-width: 220px;
+    z-index: 200;
+    overflow: hidden;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu a {
+    font-size: 13px;
+    padding: 10px 18px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 400;
+  }
+  .nav-dropdown-menu a:last-child { border-bottom: none; }
+  .nav-dropdown-menu a:hover { background: var(--bg-soft); color: var(--gold); }
+
+  .nav-cta {
+    margin-left: 1rem;
+    background: var(--gold) !important;
+    color: #fff !important;
+    border-radius: 6px;
+    padding: 9px 20px !important;
+    font-weight: 600 !important;
+    transition: background .2s, transform .15s !important;
+  }
+  .nav-cta:hover { background: #9a7a30 !important; transform: translateY(-1px); }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all .3s;
+  }
+
+  /* ── HERO ── */
+  #inicio {
+    min-height: 100vh;
+    padding-top: var(--nav-h);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 5% 5rem 7%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold-pale);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  .hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    color: var(--dark);
+    margin-bottom: 1.25rem;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #fff;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background .2s, transform .15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary:hover { background: #9a7a30; transform: translateY(-2px); }
+  .btn-primary svg { width: 16px; height: 16px; fill: currentColor; }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    padding: 13px 28px;
+    border-radius: 6px;
+    border: 1.5px solid var(--border);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: border-color .2s, color .2s;
+  }
+  .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-trust {
+    display: flex;
+    gap: 2rem;
+  }
+  .hero-trust-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-trust-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .hero-trust-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 4px;
+  }
+  .hero-trust-divider {
+    width: 1px;
+    background: var(--border);
+    margin: 0;
+    align-self: stretch;
+  }
+
+  .hero-image-col {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .hero-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(255,255,255,.3) 0%, transparent 30%);
+  }
+  .hero-image-badge {
+    position: absolute;
+    bottom: 3rem;
+    left: -1.5rem;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.4rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,.12);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-image-badge-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--gold-pale);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 20px;
+  }
+  .hero-image-badge p { font-size: 13px; color: var(--text-muted); margin: 0; }
+  .hero-image-badge strong { font-size: 15px; color: var(--dark); display: block; }
+
+  /* ── SECTION COMMONS ── */
+  section { padding: 5rem 5%; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: .75rem;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    color: var(--dark);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .section-body {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 560px;
+    line-height: 1.75;
+  }
+  .section-header { max-width: 700px; margin: 0 auto 3.5rem; text-align: center; }
+  .section-header .section-body { margin: 0 auto; }
+
+  /* ── AREAS ── */
+  #areas { background: var(--bg-soft); }
+
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .area-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .25s, box-shadow .25s, border-color .25s;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .area-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gold);
+    opacity: 0;
+    transition: opacity .25s;
+  }
+  .area-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.09); border-color: var(--gold-light); }
+  .area-card:hover::before { opacity: 1; }
+
+  .area-icon {
+    width: 48px; height: 48px;
+    background: var(--gold-pale);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: .25rem;
+  }
+  .area-icon svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+  .area-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.3;
+  }
+  .area-card p {
+    font-size: .9rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    flex: 1;
+  }
+  .area-card .area-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: .5rem;
+  }
+  .area-card .area-link svg { width: 14px; height: 14px; stroke: var(--gold); fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; transition: transform .2s; }
+  .area-card:hover .area-link svg { transform: translateX(3px); }
+
+  /* ── NOSOTROS ── */
+  #nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 5%;
+  }
+
+  .nosotros-img-wrap {
+    position: relative;
+  }
+  .nosotros-img-wrap img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .nosotros-badge {
+    position: absolute;
+    bottom: 2rem;
+    right: -1.5rem;
+    background: var(--gold);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1.2rem 1.6rem;
+    box-shadow: 0 8px 24px rgba(184,150,62,.35);
+  }
+  .nosotros-badge .num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+  .nosotros-badge .lbl { font-size: 12px; opacity: .9; margin-top: 3px; }
+
+  .nosotros-content { }
+  .nosotros-pilares {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .pilar {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+  }
+  .pilar-icon { color: var(--gold); font-size: 20px; }
+  .pilar h4 { font-size: .9rem; font-weight: 600; color: var(--dark); }
+  .pilar p { font-size: .8rem; color: var(--text-muted); line-height: 1.5; }
+
+  /* ── EQUIPO ── */
+  #equipo { background: var(--bg-section); }
+
+  .equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .team-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .team-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.09); }
+
+  .team-card-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: grayscale(15%);
+  }
+
+  .team-card-body {
+    padding: 1.4rem;
+  }
+  .team-card-body h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: .25rem;
+  }
+  .team-card-body .role {
+    font-size: .8rem;
+    color: var(--gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    margin-bottom: .75rem;
+  }
+  .team-card-body p {
+    font-size: .83rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ── TESTIMONIOS ── */
+  #testimonios { }
+
+  .testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .testimonio-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  .testimonio-stars { color: #F5A623; font-size: 14px; letter-spacing: 2px; }
+  .testimonio-text {
+    font-size: .9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-style: italic;
+    flex: 1;
+  }
+  .testimonio-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: .25rem;
+  }
+  .testimonio-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--gold-pale);
+  }
+  .testimonio-name { font-size: .85rem; font-weight: 600; color: var(--dark); }
+  .testimonio-loc { font-size: .75rem; color: var(--text-muted); }
+
+  /* ── CTA BAND ── */
+  #cta-band {
+    background: var(--dark);
+    padding: 4.5rem 5%;
+    text-align: center;
+  }
+  #cta-band .section-label { color: var(--gold-light); }
+  #cta-band .section-title { color: #fff; }
+  #cta-band .section-body { color: rgba(255,255,255,.6); margin: 0 auto 2rem; }
+  #cta-band .btn-primary { font-size: 16px; padding: 15px 36px; }
+
+  /* ── CONTACTO ── */
+  #contacto { background: var(--bg-soft); }
+
+  .contacto-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .contacto-info { }
+  .contacto-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 1.75rem;
+  }
+  .contacto-item-icon {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: var(--gold-pale);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .contacto-item-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .contacto-item h4 { font-size: .85rem; font-weight: 600; color: var(--dark); margin-bottom: 2px; }
+  .contacto-item p, .contacto-item a { font-size: .9rem; color: var(--text-muted); text-decoration: none; }
+  .contacto-item a:hover { color: var(--gold); }
+
+  .contacto-social { display: flex; gap: 10px; margin-top: .5rem; }
+  .social-icon {
+    width: 38px; height: 38px;
+    border-radius: 8px;
+    background: var(--bg-section);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: background .2s, color .2s;
+  }
+  .social-icon:hover { background: var(--gold-pale); color: var(--gold); }
+  .social-icon svg { width: 16px; height: 16px; fill: currentColor; }
+
+  .contacto-form {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2.5rem;
+  }
+  .contacto-form h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+  }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1rem; }
+  .form-group label { font-size: 13px; font-weight: 500; color: var(--text); }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 11px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 7px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    background: var(--bg-soft);
+    transition: border-color .2s;
+    outline: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); background: #fff; }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-submit { width: 100%; }
+
+  /* ── MAP ── */
+  .contacto-map {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  .contacto-map iframe { display: block; width: 100%; height: 200px; border: none; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1C1C1C;
+    color: rgba(255,255,255,.6);
+    padding: 3.5rem 5% 2rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .footer-brand img { height: 40px; margin-bottom: 1rem; filter: brightness(0) invert(1); }
+  .footer-brand p { font-size: .85rem; line-height: 1.7; max-width: 240px; }
+  .footer-col h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.85); margin-bottom: 1rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+  .footer-col ul li a { font-size: .85rem; color: rgba(255,255,255,.5); text-decoration: none; transition: color .2s; }
+  .footer-col ul li a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .footer-bottom a { color: rgba(255,255,255,.4); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--gold-light); }
+
+  /* ── WHATSAPP FLOAT ── */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(37,211,102,.45);
+    text-decoration: none;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,.6); }
+  .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    #inicio { grid-template-columns: 1fr; }
+    .hero-image-col { display: none; }
+    .hero-content { padding: 4rem 5%; text-align: center; }
+    .hero-subtitle { margin: 0 auto 2rem; }
+    .hero-actions { justify-content: center; }
+    .hero-trust { justify-content: center; }
+    .hero-badge { margin: 0 auto 1.5rem; }
+
+    #nosotros { grid-template-columns: 1fr; gap: 2.5rem; }
+    .nosotros-badge { right: 1rem; }
+
+    .contacto-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0 1.5rem;
+      z-index: 99;
+      gap: 0;
+    }
+    .nav-links.open a { padding: 12px 5%; font-size: 15px; }
+    .nav-dropdown-menu { position: static; box-shadow: none; border: none; border-radius: 0; display: block; background: var(--bg-soft); }
+    .nav-dropdown-menu a { padding: 10px 8%; font-size: 13px; color: var(--text-muted); }
+    .hamburger { display: flex; }
+    .nav-cta { margin: .75rem 5% 0; display: block; text-align: center; }
+  }
+  @media (max-width: 560px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .nosotros-pilares { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#inicio" class="nav-logo">
+    <!-- Logo SVG adaptado a fondo blanco -->
+    <svg width="140" height="44" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Perrone y Asociados">
+      <!-- Balanza -->
+      <line x1="20" y1="16" x2="20" y2="46" stroke="#B8963E" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="8" y1="16" x2="32" y2="16" stroke="#B8963E" stroke-width="1.8" stroke-linecap="round"/>
+      <!-- plato izq -->
+      <line x1="8" y1="16" x2="6" y2="28" stroke="#B8963E" stroke-width="1.4"/>
+      <line x1="32" y1="16" x2="34" y2="28" stroke="#B8963E" stroke-width="1.4"/>
+      <path d="M4 28 Q8 32 12 28" stroke="#B8963E" stroke-width="1.4" fill="none"/>
+      <path d="M28 28 Q32 32 36 28" stroke="#B8963E" stroke-width="1.4" fill="none"/>
+      <!-- base -->
+      <line x1="14" y1="46" x2="26" y2="46" stroke="#B8963E" stroke-width="1.8" stroke-linecap="round"/>
+      <!-- Texto -->
+      <text x="45" y="22" font-family="'DM Serif Display', Georgia, serif" font-size="13" fill="#2A2A2A" font-weight="400">PERRONE Y</text>
+      <text x="45" y="36" font-family="'DM Serif Display', Georgia, serif" font-size="13" fill="#2A2A2A" font-weight="400">ASOCIADOS</text>
+      <text x="45" y="50" font-family="'DM Sans', Arial, sans-serif" font-size="7.5" fill="#B8963E" font-weight="500" letter-spacing="2">SOLUCIONES LEGALES</text>
+    </svg>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#inicio">Inicio</a></li>
+    <li class="nav-dropdown">
+      <a href="#nosotros">Nosotros ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="#nosotros">¿Por qué elegirnos?</a>
+      </div>
+    </li>
+    <li class="nav-dropdown">
+      <a href="#areas">Áreas ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="#areas">Accidentes laborales</a>
+        <a href="#areas">Derecho de Familia</a>
+        <a href="#areas">Divorcios y Sucesiones</a>
+        <a href="#areas">Derecho Penal</a>
+      </div>
+    </li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="https://api.whatsapp.com/send?phone=5491171471596&text=Hola%2C%20quiero%20realizar%20una%20consulta" target="_blank" class="nav-cta">Consulta gratuita</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero-content">
+    <span class="hero-badge">Pcia. de Buenos Aires · CABA</span>
+    <h1 class="hero-title">
+      Soluciones legales<br>a tu <em>alcance</em>
+    </h1>
+    <p class="hero-subtitle">
+      Estudio jurídico integral con más de 15 años de experiencia. Especialistas en accidentes laborales, derecho de familia, penal y sucesiones. Litigamos en toda la Provincia de Buenos Aires y en Capital Federal.
+    </p>
+    <div class="hero-actions">
+      <a href="https://api.whatsapp.com/send?phone=5491171471596&text=Hola%2C%20quiero%20realizar%20una%20consulta" target="_blank" class="btn-primary">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.523 5.845L.057 23.885l6.198-1.427A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.741.98.999-3.648-.235-.374A9.855 9.855 0 012.107 12c0-5.461 4.432-9.893 9.893-9.893 5.46 0 9.893 4.432 9.893 9.893 0 5.46-4.432 9.894-9.893 9.894z"/></svg>
+        Consulta por WhatsApp
+      </a>
+      <a href="#areas" class="btn-secondary">Ver áreas de práctica</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item">
+        <span class="hero-trust-num">+15</span>
+        <span class="hero-trust-label">Años de experiencia</span>
+      </div>
+      <div class="hero-trust-divider"></div>
+      <div class="hero-trust-item">
+        <span class="hero-trust-num">+800</span>
+        <span class="hero-trust-label">Casos resueltos</span>
+      </div>
+      <div class="hero-trust-divider"></div>
+      <div class="hero-trust-item">
+        <span class="hero-trust-num">Sin<br><small style="font-size:.75rem;font-family:'DM Sans',sans-serif;font-weight:400;color:var(--gold)">cargo inicial</small></span>
+        <span class="hero-trust-label">Primera consulta</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image-col">
+    <img
+      src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=80&auto=format&fit=crop"
+      alt="Abogados profesionales"
+      loading="eager"
+    >
+    <div class="hero-image-overlay"></div>
+    <div class="hero-image-badge">
+      <div class="hero-image-badge-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div>
+        <strong>Consulta 100% gratuita</strong>
+        <p>Sin compromiso · Resultado orientado</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREAS -->
+<section id="areas">
+  <div class="section-header">
+    <p class="section-label">Práctica profesional</p>
+    <h2 class="section-title">Áreas de actuación</h2>
+    <p class="section-body">Representación especializada en cada materia. Desde la consulta inicial hasta la resolución del caso.</p>
+  </div>
+
+  <div class="areas-grid">
+
+    <a href="#contacto" class="area-card">
+      <div class="area-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+      </div>
+      <h3>Accidentes de tránsito</h3>
+      <p>Reclamamos la indemnización que corresponde por daños físicos, psicológicos y materiales derivados de accidentes viales. Actuamos frente a aseguradoras y en sede judicial sin anticipo de honorarios.</p>
+      <span class="area-link">Consultar gratis <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+    </a>
+
+    <a href="#contacto" class="area-card">
+      <div class="area-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Accidentes laborales y ART</h3>
+      <p>Si sufriste un accidente de trabajo o padecés una enfermedad profesional, reclamá la indemnización que te corresponde. Gestionamos todo el proceso ante la ART sin anticipo de gastos.</p>
+      <span class="area-link">Consultar gratis <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+    </a>
+
+    <a href="#contacto" class="area-card">
+      <div class="area-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <h3>Derecho de Familia</h3>
+      <p>Asesoramiento y representación en todas las cuestiones familiares: tenencia, alimentos, régimen de visitas, adopción y violencia doméstica, priorizando siempre el bienestar de los menores.</p>
+      <span class="area-link">Consultar gratis <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+    </a>
+
+    <a href="#contacto" class="area-card">
+      <div class="area-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      </div>
+      <h3>Divorcios y Sucesiones</h3>
+      <p>Tramitamos el divorcio vincular —incluso unilateral— de forma ágil y económica. En materia sucesoria, gestionamos la declaratoria de herederos y la partición del acervo hereditario.</p>
+      <span class="area-link">Consultar gratis <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+    </a>
+
+    <a href="#contacto" class="area-card">
+      <div class="area-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h3>Derecho Penal</h3>
+      <p>Defensa técnica en causas penales en todas sus etapas: investigación penal preparatoria, juicio oral y recursos. Actuamos tanto en la defensa del imputado como en la representación de la víctima.</p>
+      <span class="area-link">Consultar gratis <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span>
+    </a>
+
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section style="background:#fff; padding:0;">
+<div id="nosotros">
+  <div class="nosotros-img-wrap">
+    <img
+      src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&auto=format&fit=crop&crop=center"
+      alt="Estudio jurídico Perrone y Asociados"
+    >
+    <div class="nosotros-badge">
+      <div class="num">+15</div>
+      <div class="lbl">años de<br>experiencia</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
+      <img
+        src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&q=75&auto=format&fit=crop&crop=center"
+        alt="Interior estudio jurídico"
+        style="width:100%;height:110px;object-fit:cover;border-radius:8px;display:block;"
+      >
+      <img
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=75&auto=format&fit=crop&crop=center"
+        alt="Abogados en reunión"
+        style="width:100%;height:110px;object-fit:cover;border-radius:8px;display:block;"
+      >
+    </div>
+  </div>
+
+  <div class="nosotros-content">
+    <p class="section-label">Quiénes somos</p>
+    <h2 class="section-title">Un estudio a la altura<br>de tus derechos</h2>
+    <p class="section-body">
+      Estudio integral, formado por especialistas y asociados en derecho Civil, de Familia, Laboral y Penal. Con más de 15 años de experiencia, litigamos en la Provincia de Buenos Aires y en Capital Federal, brindando soluciones jurídicas eficientes y accesibles.
+    </p>
+    <p class="section-body" style="margin-top:1rem;">
+      Nos distingue el trato personalizado, la transparencia en cada etapa del proceso y el compromiso con el resultado. Trabajamos sin anticipo de honorarios en las causas que lo permiten, alineando nuestros intereses con los de nuestros clientes.
+    </p>
+
+    <div class="nosotros-pilares">
+      <div class="pilar">
+        <div class="pilar-icon">⚖️</div>
+        <h4>Resultados concretos</h4>
+        <p>Enfocados en obtener la mejor indemnización o resolución posible.</p>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">🤝</div>
+        <h4>Trato personalizado</h4>
+        <p>Comunicación directa y clara en cada etapa del proceso.</p>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">🔍</div>
+        <h4>Sin anticipo de gastos</h4>
+        <p>En causas de accidentes y laborales, sin costo inicial.</p>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">📍</div>
+        <h4>Pcia. de Buenos Aires / CABA</h4>
+        <p>Litigamos en toda la Provincia de Buenos Aires y Capital Federal.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="section-header">
+    <p class="section-label">Testimonios</p>
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <p class="section-body">La satisfacción de quienes confían en nosotros es el mayor reconocimiento a nuestro trabajo.</p>
+  </div>
+
+  <div class="testimonios-grid">
+    <div class="testimonio-card">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-text">"Sufrí un accidente en el trabajo y no sabía por dónde empezar. El equipo de Perrone me orientó desde el primer momento, sin cobrarme nada por adelantado. Quedé muy conforme con la indemnización que obtuve."</p>
+      <div class="testimonio-author">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80&auto=format&fit=crop" alt="" class="testimonio-avatar">
+        <div>
+          <div class="testimonio-name">Marcos R.</div>
+          <div class="testimonio-loc">Morón, Buenos Aires</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-text">"Me asesoraron en un divorcio complicado con hijos. La claridad con que explicaron cada paso del proceso me dio mucha tranquilidad. Excelente atención, muy recomendables."</p>
+      <div class="testimonio-author">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80&auto=format&fit=crop" alt="" class="testimonio-avatar">
+        <div>
+          <div class="testimonio-name">Valeria C.</div>
+          <div class="testimonio-loc">Haedo, Buenos Aires</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-text">"Tuve un problema penal muy serio y encontré en el Dr. Perrone un profesional que realmente se comprometió con mi caso. La defensa fue excelente y el resultado, mejor de lo esperado."</p>
+      <div class="testimonio-author">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80&auto=format&fit=crop" alt="" class="testimonio-avatar">
+        <div>
+          <div class="testimonio-name">Rodrigo M.</div>
+          <div class="testimonio-loc">Ituzaingó, Buenos Aires</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-text">"Iniciamos la sucesión de mi mamá con ellos y fue todo muy ordenado. Nos explicaron cada etapa sin tecnicismos, y lo resolvieron en menos tiempo del que esperábamos. 100% recomendable."</p>
+      <div class="testimonio-author">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&auto=format&fit=crop" alt="" class="testimonio-avatar">
+        <div>
+          <div class="testimonio-name">Laura P.</div>
+          <div class="testimonio-loc">El Palomar, Buenos Aires</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-text">"Mi accidente laboral fue hace dos años. Gracias a Perrone y Asociados pude cobrar una indemnización justa. Siempre estuvieron disponibles para responder mis dudas. Muy agradecida."</p>
+      <div class="testimonio-author">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80&auto=format&fit=crop" alt="" class="testimonio-avatar">
+        <div>
+          <div class="testimonio-name">Gabriela F.</div>
+          <div class="testimonio-loc">Castelar, Buenos Aires</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card">
+      <div class="testimonio-stars">★★★★★</div>
+      <p class="testimonio-text">"La verdad, los contacté pensando que era uno más y cobré 20 palos de indemnización. Golazo."</p>
+      <div class="testimonio-author">
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=80&q=80&auto=format&fit=crop&crop=face" alt="" class="testimonio-avatar">
+        <div>
+          <div class="testimonio-name">Brandon</div>
+          <div class="testimonio-loc">GBA, Buenos Aires</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram" style="background:var(--bg-soft); padding:4rem 5%;">
+  <div class="section-header" style="margin-bottom:2.5rem;">
+    <p class="section-label">Redes sociales</p>
+    <h2 class="section-title">Seguinos en Instagram</h2>
+    <p class="section-body">Contenido jurídico útil, novedades del estudio y casos de interés.</p>
+  </div>
+
+  <!-- Widget Instagram embed via Behold / fallback visual -->
+  <div style="max-width:960px;margin:0 auto;">
+    <!-- Grilla visual con posts simulados que linkean al perfil -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem;">
+      <a href="https://www.instagram.com/perroneabogados/" target="_blank" rel="noopener" style="display:block;aspect-ratio:1;overflow:hidden;border-radius:8px;position:relative;background:#e8e0d0;">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=75&auto=format&fit=crop" alt="Post Instagram" style="width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .3s;" onmouseover="this.style.background='rgba(0,0,0,.25)'" onmouseout="this.style.background='rgba(0,0,0,0)'"></div>
+      </a>
+      <a href="https://www.instagram.com/perroneabogados/" target="_blank" rel="noopener" style="display:block;aspect-ratio:1;overflow:hidden;border-radius:8px;position:relative;background:#e8e0d0;">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&q=75&auto=format&fit=crop" alt="Post Instagram" style="width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <a href="https://www.instagram.com/perroneabogados/" target="_blank" rel="noopener" style="display:block;aspect-ratio:1;overflow:hidden;border-radius:8px;position:relative;background:#e8e0d0;">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=75&auto=format&fit=crop" alt="Post Instagram" style="width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <a href="https://www.instagram.com/perroneabogados/" target="_blank" rel="noopener" style="display:block;aspect-ratio:1;overflow:hidden;border-radius:8px;position:relative;background:#e8e0d0;">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=75&auto=format&fit=crop" alt="Post Instagram" style="width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="https://www.instagram.com/perroneabogados/" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--border);color:var(--text);padding:12px 28px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none;transition:border-color .2s,color .2s;"
+        onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'"
+        onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 4H8C5.79 4 4 5.79 4 8v8c0 2.21 1.79 4 4 4h8c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-4 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm4.75-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+        Ver @perroneabogados en Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div id="cta-band">
+  <p class="section-label">¿Tenés un caso?</p>
+  <h2 class="section-title">Nuestro equipo está listo para ayudarte</h2>
+  <p class="section-body">Todas las consultas son gratuitas y confidenciales. No dudes en escribirnos.</p>
+  <a href="https://api.whatsapp.com/send?phone=5491171471596&text=Hola%2C%20quiero%20realizar%20una%20consulta" target="_blank" class="btn-primary" style="font-size:16px;padding:15px 36px;">
+    <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.523 5.845L.057 23.885l6.198-1.427A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.741.98.999-3.648-.235-.374A9.855 9.855 0 012.107 12c0-5.461 4.432-9.893 9.893-9.893 5.46 0 9.893 4.432 9.893 9.893 0 5.46-4.432 9.894-9.893 9.894z"/></svg>
+    Consultar por WhatsApp ahora
+  </a>
+</div>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-header">
+    <p class="section-label">Contacto</p>
+    <h2 class="section-title">Escribinos, te respondemos hoy</h2>
+    <p class="section-body">Primera consulta gratuita y sin compromiso. Contanos tu caso y te asesoramos.</p>
+  </div>
+
+  <div class="contacto-inner">
+    <div class="contacto-info">
+      <div class="contacto-item">
+        <div class="contacto-item-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.82-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.4 16.5z"/></svg>
+        </div>
+        <div>
+          <h4>WhatsApp / Teléfono</h4>
+          <a href="https://api.whatsapp.com/send?phone=5491171471596" target="_blank">11 7147-1596</a>
+        </div>
+      </div>
+
+      <div class="contacto-item">
+        <div class="contacto-item-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:estudiofperrone@gmail.com">estudiofperrone@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contacto-item">
+        <div class="contacto-item-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h4>Sede</h4>
+          <p>Morón, Buenos Aires<br><a href="https://share.google/ipZ1WW2WdGnGOKREN" target="_blank">Ver en Google Maps →</a></p>
+        </div>
+      </div>
+
+      <div class="contacto-item">
+        <div class="contacto-item-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <h4>Horario de atención</h4>
+          <p>Lunes a viernes, 9:00 – 19:00 hs</p>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-size:.85rem;font-weight:600;color:var(--dark);margin-bottom:.75rem;">Seguinos en redes</h4>
+        <div class="contacto-social">
+          <a href="https://www.instagram.com/perroneabogados/" target="_blank" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M16 4H8C5.79 4 4 5.79 4 8v8c0 2.21 1.79 4 4 4h8c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-4 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm4.75-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5491171471596" target="_blank" class="social-icon" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.523 5.845L.057 23.885l6.198-1.427A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.741.98.999-3.648-.235-.374A9.855 9.855 0 012.107 12c0-5.461 4.432-9.893 9.893-9.893 5.46 0 9.893 4.432 9.893 9.893 0 5.46-4.432 9.894-9.893 9.894z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contacto-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26283.11!2d-58.6215!3d-34.6534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf59ffffffff%3A0x0!2sMor%C3%B3n%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Perrone y Asociados, Morón"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="contacto-form">
+      <h3>Envianos tu consulta</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Tu apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="tucorreo@email.com">
+      </div>
+      <div class="form-group">
+        <label for="tel">Teléfono / WhatsApp</label>
+        <input type="tel" id="tel" placeholder="11 XXXX-XXXX">
+      </div>
+      <div class="form-group">
+        <label for="area">Área de consulta</label>
+        <select id="area">
+          <option value="">Seleccioná un área</option>
+          <option>Accidentes laborales / ART</option>
+          <option>Derecho de Familia</option>
+          <option>Divorcios</option>
+          <option>Sucesiones y Herencias</option>
+          <option>Derecho Penal</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Contanos tu caso</label>
+        <textarea id="mensaje" placeholder="Describí brevemente tu situación..."></textarea>
+      </div>
+      <button class="btn-primary form-submit" onclick="enviarConsulta()">
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.523 5.845L.057 23.885l6.198-1.427A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.741.98.999-3.648-.235-.374A9.855 9.855 0 012.107 12c0-5.461 4.432-9.893 9.893-9.893 5.46 0 9.893 4.432 9.893 9.893 0 5.46-4.432 9.894-9.893 9.894z"/></svg>
+        Enviar por WhatsApp
+      </button>
+      <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:.75rem;">Al enviar, serás redirigido a WhatsApp con tu consulta pre-completada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <svg width="140" height="40" viewBox="0 0 220 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="14" x2="20" y2="42" stroke="#D4AF6A" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="8" y1="14" x2="32" y2="14" stroke="#D4AF6A" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="8" y1="14" x2="6" y2="26" stroke="#D4AF6A" stroke-width="1.4"/>
+        <line x1="32" y1="14" x2="34" y2="26" stroke="#D4AF6A" stroke-width="1.4"/>
+        <path d="M4 26 Q8 30 12 26" stroke="#D4AF6A" stroke-width="1.4" fill="none"/>
+        <path d="M28 26 Q32 30 36 26" stroke="#D4AF6A" stroke-width="1.4" fill="none"/>
+        <line x1="14" y1="42" x2="26" y2="42" stroke="#D4AF6A" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="45" y="20" font-family="'DM Serif Display', Georgia, serif" font-size="12" fill="rgba(255,255,255,0.9)">PERRONE Y</text>
+        <text x="45" y="33" font-family="'DM Serif Display', Georgia, serif" font-size="12" fill="rgba(255,255,255,0.9)">ASOCIADOS</text>
+        <text x="45" y="46" font-family="'DM Sans', Arial, sans-serif" font-size="7" fill="#D4AF6A" letter-spacing="2">SOLUCIONES LEGALES</text>
+      </svg>
+      <p style="margin-top:1rem;">Estudio jurídico integral. Litigamos en Pcia. de Buenos Aires y CABA.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Áreas</h4>
+      <ul>
+        <li><a href="#areas">Accidentes laborales</a></li>
+        <li><a href="#areas">Derecho de Familia</a></li>
+        <li><a href="#areas">Divorcios</a></li>
+        <li><a href="#areas">Sucesiones</a></li>
+        <li><a href="#areas">Derecho Penal</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Estudio</h4>
+      <ul>
+        <li><a href="#nosotros">Quiénes somos</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+5491171471596">11 7147-1596</a></li>
+        <li><a href="mailto:estudiofperrone@gmail.com">estudiofperrone@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/perroneabogados/" target="_blank">@perroneabogados</a></li>
+        <li><a href="https://share.google/ipZ1WW2WdGnGOKREN" target="_blank">Morón, Buenos Aires</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 Perrone y Asociados – Soluciones Legales. Todos los derechos reservados.</span>
+    <a href="mailto:estudiofperrone@gmail.com">estudiofperrone@gmail.com</a>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://api.whatsapp.com/send?phone=5491171471596&text=Hola%2C%20quiero%20realizar%20una%20consulta" target="_blank" class="wa-float" aria-label="Consultar por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.523 5.845L.057 23.885l6.198-1.427A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.878 9.878 0 01-5.031-1.374l-.361-.214-3.741.98.999-3.648-.235-.374A9.855 9.855 0 012.107 12c0-5.461 4.432-9.893 9.893-9.893 5.46 0 9.893 4.432 9.893 9.893 0 5.46-4.432 9.894-9.893 9.894z"/></svg>
+</a>
+
+<script>
+  // Navbar scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Hamburger
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // Formulario → WhatsApp
+  function enviarConsulta() {
+    const nombre = document.getElementById('nombre').value.trim();
+    const apellido = document.getElementById('apellido').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const tel = document.getElementById('tel').value.trim();
+    const area = document.getElementById('area').value;
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    if (!nombre || !mensaje) {
+      alert('Por favor completá al menos tu nombre y una descripción de tu caso.');
+      return;
+    }
+
+    const texto = `Hola, me comunico desde el sitio web.\n\n*Nombre:* ${nombre} ${apellido}\n*Email:* ${email || '-'}\n*Teléfono:* ${tel || '-'}\n*Área:* ${area || '-'}\n\n*Consulta:* ${mensaje}`;
+    const url = `https://api.whatsapp.com/send?phone=5491171471596&text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+  }
+</script>
+</body>
+</html>
